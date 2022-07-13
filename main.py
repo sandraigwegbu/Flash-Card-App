@@ -47,7 +47,6 @@ def update_card_deck():
 		updated_data = pandas.DataFrame(to_learn)
 		updated_data.to_csv("./data/words_to_learn.csv", index=False)
 
-		print(len(to_learn))
 		next_card()
 	else:
 		messagebox.showinfo(title="Congratulations!", message="There are no more cards remaining in the deck.")
